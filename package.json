@@ -1,0 +1,32 @@
+{
+  "name": "authgraphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jmargielewski/auth-GraphQL.git",
+  "author": "jmargielewski <kuba.margielewski@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js --ignore client"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "7",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "connect-mongo": "^2.0.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "express-session": "^1.16.1",
+    "graphql": "^14.2.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mongoose": "^5.5.5",
+    "nodemon": "^1.18.11",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.30.0",
+    "webpack-dev-middleware": "^3.6.2"
+  }
+}
