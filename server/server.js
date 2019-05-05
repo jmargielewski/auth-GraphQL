@@ -9,7 +9,7 @@ const passportConfig = require('./services/auth');
 const MongoStore = require('connect-mongo')(session);
 const schema = require('./schema/schema');
 
-const { USER, KEY } = require('./config');
+const { USER, KEY } = require('../config/keys');
 const app = express();
 
 const MONGO_URI = `mongodb://${USER}:${KEY}@ds149676.mlab.com:49676/auth-graphql`;
