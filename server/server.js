@@ -8,11 +8,14 @@ const passport = require('passport');
 const passportConfig = require('./services/auth');
 const MongoStore = require('connect-mongo')(session);
 const schema = require('./schema/schema');
+const dotenv = require('dotenv');
+dotenv.config();
 
-const { USER, KEY } = require('../config/keys');
 const app = express();
 
-const MONGO_URI = `mongodb://${USER}:${KEY}@ds149676.mlab.com:49676/auth-graphql`;
+const MONGO_URI = `mongodb://${process.env.MONGO_USER}:${
+  process.env.MONGO_KEY
+}@ds149676.mlab.com:49676/auth-graphql`;
 mongoose.Promise = global.Promise;
 mongoose.connect(MONGO_URI);
 mongoose.connection
